@@ -1,0 +1,464 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'open sans ';
+}
+.titulo{
+    color:  #5e3918;
+    font-size: 20px;
+    margin-bottom: 10px;
+
+}
+
+/*HEADER*/
+header{
+    width: 100%;
+    height: 600px;
+    background: #F2994A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f2c84c93, #f2984a80), url(../img/portadaPrincipal.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f2c84c93, #f2984a80), url(../img/portadaPrincipal.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+nav .logo{
+    height: 70px;
+}
+.logo img{
+    height: 100%;
+    vertical-align: top;
+    
+}
+nav.contenedorMenu{
+    height: 90px;
+    width: 90%;
+    margin: auto;
+    overflow:hidden ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav{
+    height: 20%;
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    justify-content: space-between;
+    align-items:center;
+
+}
+.icono {
+    display: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 23.5px 20px;
+}
+.icono:hover{
+    cursor: pointer;
+}
+/*Hamburguesa-MENU*/
+.hamburguesa{
+    height: 100%;
+    width: 70px;
+    text-align: center;
+    display: none;
+}
+.hamburguesa img{
+    vertical-align: top;
+    padding: 5px;
+
+}
+nav  a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 16px;
+    padding: 10px 10px ;
+
+}
+nav >a:hover{
+    text-decoration: underline;
+
+}
+header .textos-header{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15%;
+   
+}
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+    margin-left: 20px;
+
+} 
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;   
+    color: #fff;
+    margin-left: 20px;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+
+/*footer*/
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+
+}
+.content-foo{
+    text-align: center;
+
+}
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+
+    
+}
+.content-foo p{
+    color: #ccc;    
+}
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+/*GRID-SERVICIOS*/
+.contenedor{
+    width: 100%;
+	max-width: 1000px;
+	margin: auto;
+    padding-bottom: 30px;
+}
+.grid{
+    position: relative;
+    width: 95%;
+    opacity: 0;
+	transition: opacity 0.5s linear 0.5s;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid.imagenes-cargadas {
+	opacity: 1;
+}
+.grid .item-contenido {
+	position: relative;
+}
+.grid .item-contenido > img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover ;
+    display: block;
+}
+.grid .item-contenido p {
+    font-weight: 300;
+    text-align: center;
+    margin: 10px;
+}
+
+.grid .item{
+    position: absolute;
+    display: block;
+    padding: 0;
+    margin: 10px;
+    width: calc(33.333333% - 20px);
+    margin-bottom: 10px;
+    height: 280px;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+
+}
+/*OVERLAY*/
+.overlay {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+}
+.overlay.activo {
+	display: flex;
+}
+.contenedor-img {
+	margin-left: 10px;
+    position: relative;
+    width: 70%;
+    height: 70%;
+    background: #fff;
+    display: flex;
+    text-align: center;  
+    justify-content: space-evenly;
+    position: relative;
+    border-radius: 10px;
+}
+.overlay .contenedor-img >img{
+    height: 40%;
+    justify-content: left; 
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center  ;
+   
+}
+.overlay .contenedor-texto{
+    display: block;
+	padding: 10px;
+	text-align:left;
+	margin-top: 5px;
+	border-radius: 10px;
+	max-width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: space-evenly;
+    
+}
+.overlay p {
+	color:  #F2994A;
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+}
+.overlay h5 {
+	color:  #58300c;
+    font-size: 18px;
+    margin-bottom: 10px;
+    
+}
+.overlay #btn-cerrar-popup {
+	background: none;
+	font-size: 30px;
+	color: rgb(248, 246, 246);
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	right: -100px;
+	top: -50px;
+}
+@media screen and (max-width: 900px){
+    /*HEADER*/
+    header{
+        background-position: center;
+    }
+    header .textos-header{
+        margin-top: 20%;
+       
+    }
+    .textos-header h1{
+        font-size: 30px;
+    
+    }
+    .textos-header h2{
+        font-size: 20px;
+    }
+   /*foreer*/
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+
+    }
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .content-foo h4{
+        border: none;
+    }
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+    .titulo-final{
+        font-size: 20px;
+    }
+      
+    /*GRID*/
+    .grid .item {
+		width: calc(50% - 20px);
+	}
+    /*OVERLAY*/
+    .overlay .contenedor-img >img{
+        width: 40%;
+        height: 30%;
+        border-radius: 10px;
+        margin-top: 10px;
+    }    
+    .contenedor-img {	
+        width: 70%;
+        height: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .overlay .contenedor-texto{
+       padding: 10px;
+       max-width: 90%;
+       margin-left: 25px;
+       margin-right: 25px;
+    }
+    .overlay .descripcion {
+        font-size: 15px;        
+    }
+    .overlay #btn-cerrar-popup {
+        right: -40px;
+        top: -50px;
+    }
+    .titulo{
+        color:  #5e3918;
+        font-size: 15px;
+        text-align: center;
+    
+    }
+    /*MENU*/
+    .hamburguesa{
+        display: block;
+    }
+    .enlaces{
+        position: fixed;
+        z-index: 1000;
+        background:rgb(219, 174, 106) ;   
+        left: 0;
+        top: 50px;
+        width: 40%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(-100%);
+
+
+    }
+    .enlaces.Eactivo{
+        transform: translateX(0%);
+    }
+    
+}
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0 ;
+        
+    }
+    nav >a {
+        margin-right: 5px;
+    }
+    .textos-header h1{
+        font-size: 35px;
+    }
+    .textos-header h2{
+        font-size: 20px;
+    }
+    
+    /*foreer*/
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+
+    }
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .content-foo h4{
+        border: none;
+    }
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+     /*GRID*/
+    .grid .item {
+		width: calc(70% - 20px);
+	}
+    /*OVERLAY*/
+    .overlay .contenedor-img >img{
+        width: 40%;
+        height: 20%;
+        border-radius: 10px;
+        margin-top: 10px;
+    }    
+    .contenedor-img {	
+        width: 70%;
+        height: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+     .overlay .descripcion {
+         font-size: 13px;
+         margin-bottom: 10px;
+     }
+     .overlay #btn-cerrar-popup {
+        right: -40px;
+        top: -50px;
+    }
+    .titulo{
+        color:  #5e3918;
+        font-size: 10px;
+        text-align: center;
+    
+    }
+    /*MENU*/
+    .hamburguesa{
+        width: 50px;
+    }
+    .enlaces{
+        position: fixed;
+        z-index: 1000;
+        background:rgb(219, 174, 106) ;   
+        left: 0;
+        top: 50px;
+        width: 40%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(-100%);
+
+
+    }
+    .enlaces.Eactivo{
+        transform: translateX(0%);
+    }
+   .logo img{
+    content:url("../img/LGALY.png");
+    }
+}
