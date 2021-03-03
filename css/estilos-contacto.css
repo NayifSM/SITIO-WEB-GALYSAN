@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'open sans ';
+}
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: chocolate;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+
+}
+
+/*HEADER*/
+header{
+    width: 100%;
+    height: 600px;
+    background: #F2994A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f2c84c93, #f2984a80), url(../img/portadaPrincipal.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f2c84c93, #f2984a80), url(../img/portadaPrincipal.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+nav .logo{
+    height: 70px;
+}
+.logo img{
+    height: 100%;
+    vertical-align: top;
+    
+}
+nav.contenedorMenu{
+    height: 90px;
+    width: 90%;
+    margin: auto;
+    overflow:hidden ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav{
+    height: 20%;
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    justify-content: space-between;
+    align-items:center;
+
+}
+.icono {
+    display: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 23.5px 20px;
+}
+.icono:hover{
+    cursor: pointer;
+}
+/*Hamburguesa-MENU*/
+.hamburguesa{
+    height: 100%;
+    width: 70px;
+    text-align: center;
+    display: none;
+}
+.hamburguesa img{
+    vertical-align: top;
+    padding: 5px;
+
+}
+nav  a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+    font-size: 16px;
+    padding: 10px 10px ;
+
+}
+nav >a:hover{
+    text-decoration: underline;
+
+}
+header .textos-header{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 15%;
+   
+}
+.textos-header h1{
+    font-size: 50px;
+    color: #fff;
+    margin-left: 20px;
+
+} 
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;   
+    color: #fff;
+    margin-left: 20px;
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+}
+/*footer*/
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+
+}
+.content-foo{
+    text-align: center;
+
+}
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+
+    
+}
+.content-foo p{
+    color: #ccc;    
+}
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #9e9797;
+}
+/*FORMULARIO*/
+.formulario{
+    width: 100%;
+    height:650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario h1{
+    text-align: center;
+    margin: 10px 0;
+    font-weight: 800;
+}
+
+form{
+    background: #eacda3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #d6ae7b, #eacda3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #d6ae7b, #eacda3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    width: 30%;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+}
+
+.form{
+    width: 100%;
+    margin: auto;
+}
+
+form .grupo{
+    position: relative;
+    margin: 45px;
+}
+
+input, textarea{
+    background: none;
+    color:#502009;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid #5f3207;
+    resize: none;
+}
+
+input:focus,textarea:focus{
+    outline: none;
+    color: rgb(94,93,93);
+}
+
+input:focus~label, 
+input:valid~label, 
+textarea:focus~label, textarea:valid~label{
+    position: absolute;
+    top: -14px;
+    font-size: 12px;
+    color: #744909;
+}
+
+label{
+    color: var(--colorTextos);
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top:10px;
+    transition: 0.5s ease all;
+    pointer-events: none;
+}
+
+
+input:focus~.barra::before, textarea:focus~.barra::before{
+    width: 100%;
+}
+.barra{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.barra::before{
+    content: '';
+    height: 2px;
+    width: 0%;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(to right, #5f4f08, #e97b3b);
+    transition: 0.3s ease all;
+    left: 0%;
+}
+button{
+    background: #D1913C; 
+    display: block;
+    width: 100px;
+    height: 40px;
+    border:none;
+    color:#fff; 
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;
+    cursor: pointer;
+}
+/*redes*/
+:root{
+    --facebook: rgb(20, 83, 199) ;
+    --gmail: rgb(211, 27, 27) ;
+}
+
+.redes{
+    padding: 60px 0;
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.redes img{
+    width: 60%;
+    margin: 20px;
+}
+.iconos{
+    display: flex;
+    align-items:center;
+    justify-content: left;
+}
+.redes ul li{
+    display: inline-block;
+    margin: 0 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+
+}
+
+.redes ul li a{
+    display: block;
+    padding: 0 10 px;
+    background: #5f4f08;
+    color: #ccc;
+    line-height: 50px;
+    font-size: 20px;
+    box-shadow: 0 3px 5px 0px rgb(0, 0, 0,0.2);
+    transition: .1s;
+}
+.redes ul:hover a{
+    filter: blur(2px);
+}
+.redes ul li a:hover{
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 5px 0px rgb(0,0,0,0.4);
+    fill: none;
+}
+.redes ul li .facebook:hover{
+    background: var(--facebook);
+}
+.redes ul li .gmail:hover{
+    background: var(--gmail);
+}
+
+h5{
+    color: #5e3918;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+}
+p{
+    color: #5e3918;
+    font-size: 20px;
+    padding: 20px;  
+}
+
+@media screen and (max-width: 900px){
+    header{
+        background-position: center;
+    }
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center ;
+    }
+    .sobre-nosotros .contenido-textos{
+        width: 90%;
+
+    }
+    .Imagen-sobre-nosotros{
+        width: 90%;
+    }
+    /*galeria*/
+    .imagen-port{
+        width: 44%;
+    }
+   
+    /*MENU*/
+    .hamburguesa{
+        display: block;
+    }
+    .enlaces{
+        position: fixed;
+        z-index: 1000;
+        background:rgb(219, 174, 106) ;   
+        left: 0;
+        top: 50px;
+        width: 40%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(-100%);
+
+
+    }
+    .enlaces.Eactivo{
+        transform: translateX(0%);
+    }
+    /*formulario*/
+    form{
+        width: 50%;
+    }
+     /*redes*/
+     .redes{
+        flex-direction: column;
+        justify-content: center ;
+    }
+}
+@media screen and (max-width:500px){
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0 ;
+        
+    }
+    nav >a {
+        margin-right: 5px;
+    }
+    .textos-header h1{
+        font-size: 35px;
+    }
+    .textos-header h2{
+        font-size: 20px;
+    }
+   
+    /*foreer*/
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+
+    }
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .content-foo h4{
+        border: none;
+    }
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+    .titulo-final{
+        font-size: 20px;
+    }
+   
+     /*MENU*/
+     .hamburguesa{
+        width: 50px;
+    }
+    .enlaces{
+        position: fixed;
+        z-index: 1000;
+        background:rgb(219, 174, 106) ;   
+        left: 0;
+        top: 50px;
+        width: 40%;
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(-100%);
+
+
+    }
+    .enlaces.Eactivo{
+        transform: translateX(0%);
+    }
+    .logo img{
+        content:url("../img/LGALY.png");
+        }
+        /*formulario*/
+    form{
+        width: 80%;
+    }
+}
