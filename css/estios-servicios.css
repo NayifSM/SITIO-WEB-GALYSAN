@@ -205,7 +205,9 @@ footer{
     height: 100vh;
     top: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.5);
+    
+    background: rgba(0, 0, 0, 0.7);
+    
     display: none;
     justify-content: center;
     align-items: center;
@@ -215,7 +217,7 @@ footer{
 	display: flex;
 }
 .contenedor-img {
-	margin-left: 10px;
+	/*margin-left: 10px;*/
     position: relative;
     width: 70%;
     height: 70%;
@@ -258,8 +260,8 @@ footer{
 	border: none;
 	cursor: pointer;
 	position: absolute;
-	right: -100px;
-	top: -50px;
+	right: 40px;
+	top: 40px;
 }
 @media screen and (max-width: 900px){
     /*HEADER*/
@@ -327,8 +329,8 @@ footer{
         font-size: 15px;        
     }
     .overlay #btn-cerrar-popup {
-        right: -40px;
-        top: -50px;
+        right: 40px;
+        top: 40px;
     }
     .titulo{
         color:  #5e3918;
@@ -371,10 +373,14 @@ footer{
         margin-right: 5px;
     }
     .textos-header h1{
-        font-size: 35px;
+        font-size: 25px;
     }
     .textos-header h2{
         font-size: 20px;
+    }
+    /*header*/
+    header{
+        height: 400px;
     }
     
     /*foreer*/
@@ -396,10 +402,36 @@ footer{
         padding-bottom: 20px;
     }
      /*GRID*/
-    .grid .item {
-		width: calc(70% - 20px);
-	}
+   
+    .grid {
+        position: relative;
+        /* width: 95%; */
+        opacity: 0;
+        transition: opacity 0.5s linear 0.5s;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .grid .item{
+        position: absolute;
+        display: block;
+        padding: 0;
+        margin: 21px;
+        width: calc(70% - 20px);
+        margin-bottom: 10px;
+        height: 280px;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+        margin-left: 20%;
+    
+    }
     /*OVERLAY*/
+    .overlay{
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
     .overlay .contenedor-img >img{
         width: 40%;
         height: 20%;
@@ -407,10 +439,10 @@ footer{
         margin-top: 10px;
     }    
     .contenedor-img {	
-        width: 70%;
+        width: 80%;
         height: 80%;
         display: block;
-        margin-left: auto;
+        margin-left: 12%;
         margin-right: auto;
     }
     
@@ -419,8 +451,8 @@ footer{
          margin-bottom: 10px;
      }
      .overlay #btn-cerrar-popup {
-        right: -40px;
-        top: -50px;
+        right: 50px;
+        top: 20px;
     }
     .titulo{
         color:  #5e3918;
@@ -428,6 +460,7 @@ footer{
         text-align: center;
     
     }
+
     /*MENU*/
     .hamburguesa{
         width: 50px;

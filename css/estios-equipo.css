@@ -327,10 +327,14 @@ footer{
         margin-right: 5px;
     }
     .textos-header h1{
-        font-size: 35px;
+        font-size: 25px;
     }
     .textos-header h2{
         font-size: 20px;
+    }
+    /*header*/
+    header{
+        height: 400px;
     }
     
     /*foreer*/
