@@ -264,6 +264,8 @@ button{
 :root{
     --facebook: rgb(20, 83, 199) ;
     --gmail: rgb(211, 27, 27) ;
+    --whatsapp: rgb(98, 226, 13) ;
+    --ubicacion:rgb(85, 72, 206) ;
 }
 
 .redes{
@@ -314,8 +316,14 @@ button{
 .redes ul li .facebook:hover{
     background: var(--facebook);
 }
-.redes ul li .gmail:hover{
+.redes ul li .correo:hover{
     background: var(--gmail);
+}
+.redes ul li .whatsapp:hover{
+    background: var(--whatsapp);
+}
+.redes ul li .ubicacion:hover{
+    background: var(--ubicacion);
 }
 
 h5{
