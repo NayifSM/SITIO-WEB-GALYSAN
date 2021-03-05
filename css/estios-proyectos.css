@@ -391,10 +391,10 @@ footer{
     .contenedor-footer{
         flex-direction: column;
         border: none;
-
+        padding-bottom: 30px;
     }
     .content-foo{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         text-align: center;
     }
     .content-foo h4{
@@ -403,7 +403,12 @@ footer{
     .content-foo p{
         color: #ccc;
         border-bottom: 1px solid #f2f2f2;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
+    }   
+    footer {
+        padding: 15px 0 10px 0;
+        margin: auto;
+        overflow: hidden;
     }
      /*GRID*/
    

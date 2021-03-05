@@ -336,15 +336,14 @@ footer{
     header{
         height: 400px;
     }
-    
     /*foreer*/
     .contenedor-footer{
         flex-direction: column;
         border: none;
-
+        padding-bottom: 30px;
     }
     .content-foo{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         text-align: center;
     }
     .content-foo h4{
@@ -353,7 +352,12 @@ footer{
     .content-foo p{
         color: #ccc;
         border-bottom: 1px solid #f2f2f2;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
+    }   
+    footer {
+        padding: 15px 0 10px 0;
+        margin: auto;
+        overflow: hidden;
     }
      
     /*MENU*/
@@ -384,14 +388,35 @@ footer{
     }
       /*clientes*/
       .cards .card{
-        height: 400px ;
+        height: 200px ;
         display: flex;
         flex-direction: column;
         align-items: center ;
 
     }
     .cards .card img{
-        width: 90px;
-        height: 90px;
+        width: 100px;
+        height: 100px;
+    }
+    .cards .card > .contenido-texto-card h4 {
+         font-size: 20px;
+         text-align: center;
+    }
+    .reconocimientos{
+        margin: 20px;
+    }
+    .reconocimiento {
+      
+        width: 100%;
+        padding: 10px;
+    }
+    .reconocimientos .reconocimiento img {
+        width: 85%;
+        object-fit: cover;
+        display: block;
+        border-radius: 19px;
+    }
+    .reconocimientos .reconocimiento >  .contenido-texto-card{
+        width: 100%;
     }
 }

@@ -637,10 +637,10 @@ video{
     .contenedor-footer{
         flex-direction: column;
         border: none;
-
+        padding-bottom: 30px;
     }
     .content-foo{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         text-align: center;
     }
     .content-foo h4{
@@ -649,19 +649,23 @@ video{
     .content-foo p{
         color: #ccc;
         border-bottom: 1px solid #f2f2f2;
-        padding-bottom: 20px;
-    }
-    .titulo{
-        font-size: 20px;
-        margin-bottom: 10px;
-    
+        padding-bottom: 10px;
+    }   
+    footer {
+        padding: 15px 0 10px 0;
+        margin: auto;
+        overflow: hidden;
     }
     /*OVERLAY*/
         
     video{
         margin-top: 70%;
     }
-        
+    .contenedor-img {
+        margin: auto;
+        width: 90%; 
+        height: 100%;
+    }   
     #cerrar + label{
         height: 30px;
         width: 30px;

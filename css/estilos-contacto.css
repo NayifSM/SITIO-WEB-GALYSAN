@@ -121,6 +121,7 @@ header .textos-header{
     width: 100%;
 
 }
+
 /*footer*/
 footer{
     background: #414141;
@@ -286,6 +287,9 @@ button{
     align-items:center;
     justify-content: left;
 }
+.iconos-conteiner{
+    margin: 10%;
+}
 .redes ul li{
     display: inline-block;
     margin: 0 5px;
@@ -332,7 +336,7 @@ h5{
     text-align: center;
     padding: 20px;
 }
-p{
+.redes p{
     color: #5e3918;
     font-size: 20px;
     padding: 20px;  
@@ -391,6 +395,27 @@ p{
         flex-direction: column;
         justify-content: center ;
     }
+     /*foreer*/
+     .contenedor-footer{
+        flex-direction: column;
+        border: none;
+
+    }
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .content-foo h4{
+        border: none;
+    }
+    .content-foo p{
+        color: #ccc;
+        border-bottom: 1px solid #f2f2f2;
+        padding-bottom: 20px;
+    }
+    .titulo-final{
+        font-size: 20px;
+    }
 }
 @media screen and (max-width:500px){
     nav{
@@ -411,15 +436,14 @@ p{
     header{
         height: 400px;
     }
-   
     /*foreer*/
     .contenedor-footer{
         flex-direction: column;
         border: none;
-
+        padding-bottom: 30px;
     }
     .content-foo{
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         text-align: center;
     }
     .content-foo h4{
@@ -428,12 +452,13 @@ p{
     .content-foo p{
         color: #ccc;
         border-bottom: 1px solid #f2f2f2;
-        padding-bottom: 20px;
+        padding-bottom: 10px;
+    }   
+    footer {
+        padding: 15px 0 10px 0;
+        margin: auto;
+        overflow: hidden;
     }
-    .titulo-final{
-        font-size: 20px;
-    }
-   
      /*MENU*/
      .hamburguesa{
         width: 50px;
@@ -465,28 +490,40 @@ p{
         width: 80%;
     }
     /*redes*/
-    p{
+    .iconos p{
         font-size: 15px;
         padding: 10px;  
     }
-    
-.redes ul li{
-    display: inline-block;
-    margin: 0 5px;
-    width: 30px;
-    height: 30px;
-    text-align: center;
+    h5{
+        text-align: center;
+        padding: 0;
+    }
+    .redes {
+        padding: 10px 0;
+        display: flex;
+        align-items: center;
+    }
+    .redes ul li{
+        display: inline-block;
+        margin: 0 5px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
 
-}
+    }
+    .redes img {
+        width: 100%;
+        margin: 10px;
+    }
 
-.redes ul li a{
-    display: block;
-    padding: 0 10 px;
-    background: #5f4f08;
-    color: #ccc;
-    line-height: 30px;
-    font-size: 10px;
-    box-shadow: 0 3px 5px 0px rgb(0, 0, 0,0.2);
-    transition: .1s;
-}
+    .redes ul li a{
+        display: block;
+        padding: 0 10 px;
+        background: #5f4f08;
+        color: #ccc;
+        line-height: 35px;
+        font-size: 20px;
+        box-shadow: 0 3px 5px 0px rgb(0, 0, 0,0.2);
+        transition: .1s;
+    }
 }
