@@ -69,6 +69,13 @@ nav{
 .icono:hover{
     cursor: pointer;
 }
+.textos-header h5{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;   
+    color: #fff;
+    margin-left: 20px;
+}
 /*Hamburguesa-MENU*/
 .hamburguesa{
     height: 100%;
@@ -452,7 +459,7 @@ footer{
 #cerrar{
     display: none;
 }
-#cerrar + label{
+#cerrar + label {
     position: fixed;
     color: #ccc;
     font-size: 25px;
@@ -463,8 +470,8 @@ footer{
     width: 40px;
     line-height: 40px;
     border-radius: 50%;
-    right: 20px;
-    top: 20px;
+    right: 80px;
+    top: 60px;
     cursor: pointer;
 
     animation: overlay 2s 2s;
@@ -472,10 +479,10 @@ footer{
     visibility: hidden;
     opacity: 0;
 }
-#cerrar:checked + label, #cerrar:checked ~ .overlay{
+#cerrar:checked + label,#cerrar:checked, #cerrar:checked ~ .overlay{
     display: none;
 }
-@keyframes overlay{
+@keyframes overlay {
  100%{
     visibility: visible;
     opacity: 1;

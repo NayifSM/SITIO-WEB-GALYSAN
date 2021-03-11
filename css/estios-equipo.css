@@ -13,8 +13,8 @@ header{
     width: 100%;
     height: 600px;
     background: #F2994A;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #f2c84c93, #f2984a80), url(../img/portadaPrincipal.jpg);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #f2c84c93, #f2984a80), url(../img/portadaPrincipal.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #f2c84c93, #f2984a80), url(../img/portadaNuestroEquipo.jpg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f2c84c93, #f2984a80), url(../img/portadaNuestroEquipo.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -185,7 +185,7 @@ footer{
 .reconocimientos .reconocimiento > .contenido-texto-card h4{
     font-weight: 300;
     padding-top: 5px;
-    font-size: 20px;
+    font-size: 15px;
 }
 /*clietes*/
 .cards{
@@ -227,7 +227,7 @@ footer{
 .cards .card > .contenido-texto-card h4{
     font-weight: 300;
     padding-top: 5px;
-    font-size: 30px;
+    font-size: 19px;
     
 }
 .titulo{
